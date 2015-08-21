@@ -18,6 +18,9 @@ BASHRC
     run %q{export PATH="$HOME/.rbenv/bin:$PATH"}
     run %q{eval "$(rbenv init -)"}
     run "rbenv #{rbenv_bootstrap}"
+    #added the following line to remove existing ruby versions folder. 
+    #because it will prompt a continue install (y/N), 
+    #which i don't know how to remove.
     run "rm -rf '~/.rbenv/versions'"
     run "rbenv install #{ruby_version}"
     run "rbenv global #{ruby_version}"
