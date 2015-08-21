@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#ignore local database.yml file. 
+#the remote database config file will be created using a cap recipe
+/config/database.yml
