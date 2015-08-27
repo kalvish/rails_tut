@@ -21,7 +21,7 @@ BASHRC
     #added the following line to remove existing ruby versions folder. 
     #because it will prompt a continue install (y/N), 
     #which i don't know how to remove.
-    run "rm -rf '~/.rbenv/versions'"
+    run "rm -rf ~/.rbenv/versions"
     run "rbenv install #{ruby_version}"
     run "rbenv global #{ruby_version}"
     run "gem install bundler --no-ri --no-rdoc"
