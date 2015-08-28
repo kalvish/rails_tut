@@ -9,7 +9,7 @@ load "config/recipes/rbenv"
 load "config/recipes/check"
 
 set :ssh_options, { keys: ["#{ENV['HOME']}/.ssh/fms_computer.pem"] }
-server "52.26.212.188", :web, :app, :db, primary: true
+server "52.24.42.200", :web, :app, :db, primary: true
 
 set :user, "ubuntu"
 set :application, "rails_tut"
